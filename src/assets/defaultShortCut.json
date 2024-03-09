@@ -1,42 +1,52 @@
 [
   {
     "id": 0,
-    "name": "翻译",
-    "url": "https://www.deepl.com/zh/translator"
+    "name": "QQ邮箱",
+    "url": "https://mail.qq.com"
   },
   {
     "id": 1,
-    "name": "地图",
-    "url": "https://ditu.amap.com/"
+    "name": "chatgpt",
+    "url": "http://chat.openai.com"
   },
   {
     "id": 2,
-    "name": "图片",
-    "url": "https://www.pexels.com/zh-cn/"
+    "name": "哔哩哔哩",
+    "url": "http://www.bilibili.com/"
   },
   {
     "id": 3,
-    "name": "云盘",
-    "url": "https://www.aliyundrive.com/drive/"
+    "name": "知乎",
+    "url": "https://www.zhihu.com/"
   },
   {
     "id": 4,
-    "name": "Cloudflare",
-    "url": "https://dash.cloudflare.com/"
-  },
-  {
-    "id": 5,
-    "name": "邮箱",
-    "url": "https://mail.qq.com/"
-  },
-  {
-    "id": 6,
     "name": "GitHub",
     "url": "https://github.com/"
   },
   {
+    "id": 5,
+    "name": "vercel",
+    "url": "http://www.vercel.com"
+  },
+  {
+    "id": 6,
+    "name": "iconfont",
+    "url": "http://www.iconfont.cn"
+  },
+  {
     "id": 7,
-    "name": "哔哩哔哩",
-    "url": "https://www.bilibili.com/"
+    "name": "BLOG",
+    "url": "http://blog.101jc.com"
+  },
+  {
+    "id": 8,
+    "name": "个人主页",
+    "url": "https://101jc.com/"
+  },
+  {
+    "id": 9,
+    "name": "腾讯云",
+    "url": "https://cloud.tencent.com/"
   }
 ]

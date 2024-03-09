@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "跟廖雪峰学Python",
+    "url": "https://www.liaoxuefeng.com/wiki/1016959663602400"
+  },
+  {
+    "id": 1,
+    "name": "w3school",
+    "url": "https://www.w3school.com.cn/"
+  },
+  {
+    "id": 2,
+    "name": "菜鸟教程",
+    "url": "https://www.runoob.com/"
+  },
+  {
+    "id": 3,
+    "name": "中国大学MOOC",
+    "url": "https://www.icourse163.org/"
+  },
+  {
+    "id": 4,
+    "name": "浙江图书馆",
+    "url": "https://www.zjlib.cn/"
+  }
+]

@@ -1,7 +1,7 @@
 <template>
   <!-- 捷径 -->
   <Transition name="fade" mode="out-in">
-    <div v-if="shortcutData[0]" class="shortcut">
+    <div v-if="shortcutresourcesData[0]" class="shortcut">
       <n-scrollbar class="scrollbar">
         <n-grid
           class="all-shortcut"
@@ -11,7 +11,7 @@
           :y-gap="10"
         >
           <n-grid-item
-            v-for="item in shortcutData"
+            v-for="item in shortcutresourcesData"
             :key="item"
             class="shortcut-item"
             @contextmenu="shortCutContextmenu($event, item)"
@@ -129,7 +129,7 @@ import identifyInput from "@/utils/identifyInput";
 
 const set = setStore();
 const site = siteStore();
-const { shortcutData } = storeToRefs(site);
+const { shortcutresourcesData } = storeToRefs(site);
 
 // 图标渲染
 const renderIcon = (icon) => {
@@ -204,7 +204,7 @@ const addShortcutClose = () => {
 // 开启添加捷径
 const addShortcutModalOpen = () => {
   // 生成 ID
-  const shortcutMaxID = shortcutData.value.reduce((max, item) => {
+  const shortcutMaxID = shortcutresourcesData.value.reduce((max, item) => {
     return item.id > max ? item.id : max;
   }, -1);
   // 生成表单数据
@@ -227,7 +227,7 @@ const addOrEditShortcuts = () => {
     // 新增捷径
     if (!addShortcutModalType.value) {
       // 是否重复
-      const isDuplicate = shortcutData.value?.some(
+      const isDuplicate = shortcutresourcesData.value?.some(
         (item) =>
           item.name === addShortcutValue.value.name || item.url === addShortcutValue.value.url,
       );
@@ -235,7 +235,7 @@ const addOrEditShortcuts = () => {
         $message.error("新增名称或链接与已有捷径重复");
         return false;
       }
-      shortcutData.value.push({
+      shortcutresourcesData.value.push({
         id: addShortcutValue.value.id,
         name: addShortcutValue.value.name,
         url: addShortcutValue.value.url,
@@ -245,13 +245,13 @@ const addOrEditShortcuts = () => {
       return true;
     } else {
       // 编辑捷径
-      const index = shortcutData.value.findIndex((item) => item.id === addShortcutValue.value.id);
+      const index = shortcutresourcesData.value.findIndex((item) => item.id === addShortcutValue.value.id);
       if (index === -1) {
         $message.error("捷径中不存在该项，请重试");
         return false;
       }
-      shortcutData.value[index].name = addShortcutValue.value.name;
-      shortcutData.value[index].url = addShortcutValue.value.url;
+      shortcutresourcesData.value[index].name = addShortcutValue.value.name;
+      shortcutresourcesData.value[index].url = addShortcutValue.value.url;
       $message.success("捷径编辑成功");
       addShortcutClose();
       return true;
@@ -263,12 +263,12 @@ const addOrEditShortcuts = () => {
 const delShortcuts = () => {
   const deleteId = addShortcutValue.value.id;
   if (typeof deleteId === "number") {
-    const indexToRemove = shortcutData.value.findIndex((item) => item.id === deleteId);
+    const indexToRemove = shortcutresourcesData.value.findIndex((item) => item.id === deleteId);
     if (indexToRemove !== -1) {
-      shortcutData.value.splice(indexToRemove, 1);
+      shortcutresourcesData.value.splice(indexToRemove, 1);
       // 将后续元素的 id 前移一位
-      for (let i = indexToRemove; i < shortcutData.value.length; i++) {
-        shortcutData.value[i].id = i;
+      for (let i = indexToRemove; i < shortcutresourcesData.value.length; i++) {
+        shortcutresourcesData.value[i].id = i;
       }
       $message.success("捷径删除成功");
       return true;

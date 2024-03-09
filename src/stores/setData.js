@@ -14,8 +14,8 @@ const useSetDataStore = defineStore("setData", {
       // 壁纸模糊
       backgroundBlur: 0,
       // 搜索引擎
-      searchEngine: "bing",
-      lastSearchEngine: "bing",
+      searchEngine: "baidu",
+      lastSearchEngine: "baidu",
       customEngineUrl: "",
       // 搜索框收起
       smallInput: false,
