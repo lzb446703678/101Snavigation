@@ -9,7 +9,7 @@
       <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
         {{ icp }}
       </span>
-      <span class="about" @click="aboutSiteModal = true">关于</span>
+      <span class="about" @click="jumpTo('https://101jc.com')">返回主页</span>
     </div>
     <!-- 关于 -->
     <n-modal
