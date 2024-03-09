@@ -48,5 +48,10 @@
     "id": 9,
     "name": "腾讯云",
     "url": "https://cloud.tencent.com/"
+  },
+  {
+    "id": 10,
+    "name": "智谱清言",
+    "url": "https://www.chatglm.cn/"
   }
 ]
