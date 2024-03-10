@@ -53,5 +53,15 @@
     "id": 10,
     "name": "智谱清言",
     "url": "https://www.chatglm.cn/"
+  },
+  {
+    "id": 11,
+    "name": "UptimeRobot",
+    "url": "https://uptimerobot.com/"
+  },
+  {
+    "id": 12,
+    "name": "51la",
+    "url": "https://v6.51.la/user/application"
   }
 ]
