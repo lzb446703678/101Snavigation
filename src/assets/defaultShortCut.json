@@ -63,5 +63,20 @@
     "id": 12,
     "name": "51la",
     "url": "https://v6.51.la/user/application"
+  },
+  {
+    "id": 13,
+    "name": "九术AI",
+    "url": "https://ai.ninesure.com/chat"
+  },
+  {
+    "id": 14,
+    "name": "Xicons",
+    "url": "https://www.xicons.org"
+  },
+  {
+    "id": 15,
+    "name": "色彩管理-莫兰迪",
+    "url": "https://www.qtccolor.com/secaiku/show/235"
   }
 ]
