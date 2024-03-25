@@ -10,7 +10,7 @@
         &nbsp;&nbsp; 基于
         <a href="https://github.com/imsyy" target="_blank" style="color: #ffffff;">imsyy</a>
         的开源项目并遵循
-        <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #ffffff;">MIT许可协议</a>
+        <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" style="color: #ffffff;">GPL许可协议</a>
       </span>
 
 
