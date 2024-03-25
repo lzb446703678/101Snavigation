@@ -6,6 +6,14 @@
       <span class="anthor" @click="jumpTo(copyrightLink ?? 'https://github.com/lzb446703678/101Snavigation')">
         {{ siteAnthor }}
       </span>
+      <span class="hidden">
+        &nbsp;&nbsp; 基于
+        <a href="https://github.com/imsyy" target="_blank" style="color: #ffffff;">imsyy</a>
+        的开源项目并遵循
+        <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #ffffff;">MIT许可协议</a>
+      </span>
+
+
       <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
         {{ icp }}
       </span>
@@ -137,4 +145,10 @@ const jumpTo = (url) => {
     margin-top: 20px;
   }
 }
+@media (max-width: 480px) {
+ .hidden {
+display: none;
+ }
+ }
+
 </style>
