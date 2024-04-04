@@ -42,7 +42,7 @@ export default defineConfig({
         background_color: "#efefef",
         icons: [
           {
-            src: "https://img.101jc.com/img/144.png!yuantu",
+            src: "https://img.101jc.com/img/144.png",
             sizes: "144x144",
             type: "image/png",
           },
