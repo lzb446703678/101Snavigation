@@ -52,7 +52,7 @@
         </Transition>
       </main>
       <div v-else id="loading">
-        <img src="https://img.101jc.com/img/128.png!yuantu" alt="logo" class="logo" />
+        <img src="https://img.101jc.com/img/128.png" alt="logo" class="logo" />
         <span class="tip">加载中</span>
       </div>
     </Transition>
