@@ -107,24 +107,24 @@ onBeforeUnmount(() => {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
     backface-visibility: hidden;
-    transform: scale(1.2);
+    transform: scale(1.0);
     filter: blur(var(--blur));
     transition:
       filter 0.3s,
       transform 0.3s;
     animation: fade-blur-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-  .gray {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),
-      radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
-  }
+  // .gray {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 100%),
+  //     radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+  // }
 }
 </style>
